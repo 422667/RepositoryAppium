@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test2(failed)" parallel="tests">
+    <parameter name="mjpegServerPort" value="8046"/>
+    <parameter name="app" value="/app/leaforg.apk"/>
+    <parameter name="chromeDriverPort" value="8045"/>
+    <parameter name="udid" value="e465bed2"/>
+    <parameter name="deviceName" value="Real Device"/>
+    <parameter name="systemPort" value="8047"/>
+    <classes>
+      <class name="testCases.TC001_Login_Real_Device2">
+        <methods>
+          <include name="am"/>
+          <include name="setUpClass"/>
+          <include name="bs"/>
+          <include name="bc"/>
+          <include name="as"/>
+          <include name="tearDownClass"/>
+          <include name="bm"/>
+          <include name="login3"/>
+        </methods>
+      </class> <!-- testCases.TC001_Login_Real_Device2 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test(failed)" parallel="tests">
+    <parameter name="mjpegServerPort" value="8036"/>
+    <parameter name="app" value="/app/leaforg.apk"/>
+    <parameter name="chromeDriverPort" value="8035"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="deviceName" value="Emulator"/>
+    <parameter name="systemPort" value="8037"/>
+    <classes>
+      <class name="testCases.TC001_Login_Real_Device2">
+        <methods>
+          <include name="am"/>
+          <include name="setUpClass"/>
+          <include name="bs"/>
+          <include name="bc"/>
+          <include name="as"/>
+          <include name="tearDownClass"/>
+          <include name="bm"/>
+          <include name="login3"/>
+        </methods>
+      </class> <!-- testCases.TC001_Login_Real_Device2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
